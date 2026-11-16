@@ -30,13 +30,5 @@
         "roll": "webbserver",
         "status": "down",
         "senast_kontrollerad": "2026-11-14 13:12"
-    },
-    {
-        "namn": "app01",
-        "adress": "127.0.0.1",
-        "miljo": "dev",
-        "roll": "webbserver",
-        "status": "up",
-        "senast_kontrollerad": "2026-11-14 13:12"
     }
 ]
