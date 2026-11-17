@@ -6,7 +6,7 @@ from pathlib import Path
 
 def hamta_filnamn():
     return os.getenv("INVENTORY_DATAFIL", "servrar.json")
-
+# läser servrar från filen
 def ladda_servrar():
     filnamn = hamta_filnamn()
 

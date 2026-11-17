@@ -3,14 +3,14 @@ import sys
 from meny import lagg_till_server
 from lagring import ladda_servrar, spara_servrar, exportera_csv
 from kontroller import kontrollera_server, kontrollera_alla
-
+# Visar alla servrar med deras information
 def visa_servrar(servrar):
     print(f"{'Namn':<15} {'Adress':<20} {'Miljö':<10} {'Roll':<20} {'Status':<10}")
     print("-" * 80)
-
+    
     for server in servrar:
-       print(f"{server['namn']:<15} {server['adress']:<20} {server['miljo']:<10} {server['roll']:<20} {server['status']:<10}")
-
+        print(f"{server['namn']:<15} {server['adress']:<20} {server['miljo']:<10} {server['roll']:<20} {server['status']:<10}")
+# Skapar argument för att kunna köra programmet i Terminalen
 def skapa_parser():
     parser = argparse.ArgumentParser(description="Server Inventory Tool")
 
@@ -35,8 +35,9 @@ def meny(servrar):
             print("7. Exportera CSV")
             print("8. Avsluta")
 
-            val = input("Välj ett arletnativ: ")
+            val = input("Välj ett alternativ: ")
 
+            # Hanterar användarens val
             if val == "1":
                 visa_servrar(servrar)
 
@@ -105,6 +106,7 @@ def meny(servrar):
 
             else:
                 print("Fel val. Försök igen.")
+# Startar programmet och hanterar CLI-kommandon                
 def starta_program():
     servrar = ladda_servrar()
 
@@ -155,5 +157,5 @@ def starta_program():
     return 0
         
 if __name__ == "__main__":
-   sys.exit(starta_program())
+    sys.exit(starta_program())
 

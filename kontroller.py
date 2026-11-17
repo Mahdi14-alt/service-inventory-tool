@@ -1,6 +1,6 @@
 import subprocess
 from datetime import datetime
-
+# kontrollerar om en server svarar
 def kontrollera_server(server):
     
     try:
@@ -19,11 +19,11 @@ def kontrollera_server(server):
     except subprocess.TimeoutExpired:
         server["status"] = "down"
         print(server["namn"], "svarar inte")
-
+    # Sparar datum och tid för kontrollen
     server["senast_kontrollerad"] = datetime.now() .strftime("%Y-%m-%d %H:%M")
 
     return server["status"] == "up"
-
+# kontroll alla servrar
 def kontrollera_alla(servrar):
 
     alla_uppe = True

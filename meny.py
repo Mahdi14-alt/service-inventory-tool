@@ -1,3 +1,4 @@
+# Lägger till en server
 def lagg_till_server(servrar):
 
     namn=input ("Servername: ")

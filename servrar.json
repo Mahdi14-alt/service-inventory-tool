@@ -5,7 +5,7 @@
         "miljo": "prod",
         "roll": "webbserver",
         "status": "up",
-        "senast_kontrollerad": "2026-11-14 13:11"
+        "senast_kontrollerad": "2026-11-17 15:58"
     },
     {
         "namn": "test01",
@@ -13,7 +13,7 @@
         "miljo": "test",
         "roll": "testserver",
         "status": "down",
-        "senast_kontrollerad": "2026-11-14 13:12"
+        "senast_kontrollerad": "2026-11-17 15:58"
     },
     {
         "namn": "dev01",
@@ -21,7 +21,7 @@
         "miljo": "dev",
         "roll": "utvecklingsserver",
         "status": "up",
-        "senast_kontrollerad": "2026-11-14 13:12"
+        "senast_kontrollerad": "2026-11-17 15:58"
     },
     {
         "namn": "web02",
@@ -29,6 +29,18 @@
         "miljo": "dev",
         "roll": "webbserver",
         "status": "down",
+
         "senast_kontrollerad": "2026-11-14 13:12"
+
+       
+    },
+    {
+        "namn": "app01",
+        "adress": "127.0.0.1",
+        "miljo": "dev",
+        "roll": "webbserver",
+        "status": "up",
+        "senast_kontrollerad": "2026-11-17 15:59"
+
     }
 ]
