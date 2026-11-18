@@ -25,7 +25,7 @@ def starta_program():
     parser = skapa_parser()
     args = parser.parse_args()
 
-    if args.lista:
+    if args.lista or args.miljo:
         if args.miljo:
             filtrerade_servrar = []
 
